@@ -100,7 +100,7 @@ extension Reactive where Base: Auth {
                 case let .success(credential):
                     observer(.success(credential))
                 case let .failure(error):
-                    observer(.error(error))
+                        observer(.failure(error))
                 }
             }
             return Disposables.create()

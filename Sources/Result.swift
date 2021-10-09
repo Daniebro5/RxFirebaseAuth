@@ -49,7 +49,7 @@ enum Result<T> {
         case let .success(value):
             observer(.success(value))
         case let .failure(error):
-            observer(.error(error))
+            observer(.failure(error))
         }
     }
 }
